@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Gyermelyi</title>
 
     <meta name="description" content="Gyermelyi">
     <meta name="keyword" content="Gyermelyi, gyermelyi, Germelyi, germelyi, Gyermei, gyermei">
@@ -61,7 +60,9 @@
     <nav class="sr-only" aria-label="Ugrási link">
         <ul>
             <li>
+                <!-- mindig id-t kell megadni ott ahova ugrik mert csak a hastag jelet tudja érzékelni -->
                 <a href="#primary-menu">Ugrás a fő menűre</a>
+                <a href="#footer-menu">Ugrás a lábjegyzékre</a>
             </li>
         </ul>
     </nav>
@@ -75,7 +76,7 @@
                     </a>
                 </div>
                 <div class="col-md-8">
-                    <nav class="primary-menu" role="navigation" aria-label="Elsődleges navigációs menü">
+                    <nav id="primary-menu" class="primary-menu" role="navigation" aria-label="Elsődleges navigációs menü">
                         <a href="javascript:void(0);" class="mobile-menu"><i class="ti-menu"></i></a>
                         <ul>
                             <li><a href="#">Cégünkről</a></li>
@@ -88,10 +89,8 @@
             </div>
         </div>
     </header>
-
-    <body>
         <main id="main" role="main">
-            <seccion class="banner">
+            <section class="banner">
                 <div class="spa-img">
                     <img src="assets/img/products/4t_abc.jpg" alt="vizuális grafikai elem">
                 </div>
@@ -112,8 +111,8 @@
                     </div>
 
                 </div>
-            </seccion>
-            <seccion class="about">
+            </section>
+            <section class="about">
                 <div class="container">
                     <img src="assets/img/products/lt_buzadara_et_th.png" alt="vizuális grafikai elem">
                     <img src="assets/img/products/4t_abc.jpg" alt="vizuális grafikai elem">
@@ -130,8 +129,8 @@
                     </div>
                 </div>
 
-            </seccion>
-            <seccion class="Insta-service">
+            </section>
+            <section class="Insta-service">
                 <div class="service-c OwlCarousel2-2">
 
 
@@ -163,18 +162,14 @@
                             <span>Megtekint</span>
                         </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti amet magnam nobis, sunt
-                        assumenda quasi reprehenderit illum! Magnam accusantium, tempore magni illum veritatis expedita
-                        nemo? Nobis necessitatibus ea ullam fugit!</p>
-
                 </div>
-            </seccion>
-            <seccion class="goods">
+            </section>
+            <section class="goods">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12 m-auto">
-                            <h3>Termékek</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem nam
+                            <h3 class="center">Termékek</h3>
+                            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem nam
                                 accusantium quidem vero quod sit optio blanditiis odit? Quaerat dolore laboriosam
                                 voluptates at blanditiis nisi delectus, harum sed fugit!</p>
                         </div>
@@ -219,11 +214,24 @@
 
                     </div>
                 </div>
-            </seccion>
+            </section>
         </main>
-    </body>
-    <footer>
-
+    
+    <footer class="footer abs-footer pt-3">
+        <div class="container">
+            <nav id="foo-nav">
+                <ul>
+                    <li><a href="#">NYEREMÉNYJÁTÉK</a></li>
+                    <li><a href="#">KARRIER</a></li>
+                    <li><a href="#">ADATVÉDELMI NYILATKOZAT</a></li>
+                </ul>
+            </nav>
+            <div class="icon center">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <span class="center">© 2020. GYERMELYI ZRT.</span>
+        </div>
     </footer>
     <!-- scriptek -->
     <script src="assets/js/bootstrap.min.js"></script>
