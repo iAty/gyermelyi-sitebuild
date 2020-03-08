@@ -118,6 +118,7 @@ section {
     text-transform: uppercase;
     min-width: 170px;
     padding: 20px 15px;
+    transition: 1000ms;
 }
 
 .post {
@@ -141,6 +142,7 @@ section {
 .btn:hover {
     background-color: rgba(28, 57, 224, 0.9);
     color: #fff;
+    transition: 1000ms;
 }
 
 .sec-heading {
@@ -185,7 +187,8 @@ section {
 .spa-img {
     display: block;
     float: right;
-    width: 280px;
+    width: 520px;
+    margin-right: 3%;
 }
 .banner-content {
     padding-top: 16px;
@@ -202,6 +205,12 @@ div.banner-content h2 {
     margin-top: 50px;
     color: rgb(116, 112, 112);
     font-weight: bold;
+    transition: 1000ms;
+}
+.video-btn:hover {
+    color: rgb(161, 153, 153);
+    text-decoration: none;
+    transition: 1000ms;
 }
 .ti-control-play {
     border: 12px solid #1c39e0;
@@ -209,6 +218,12 @@ div.banner-content h2 {
     background-color: #1c39e0;
     color: white;
     margin-right: 12px;
+    transition: 1000ms;
+}
+.ti-control-play:hover {
+    background-color: #4157d4;
+    border-color: #4157d4;
+    transition: 1000ms;
 }
 
 /* section about ---------------------------------------- */
@@ -275,6 +290,22 @@ section.goods h3 {
 }
 section.goods .container{
     margin-bottom: 70px;
+}
+section.goods p {
+    padding-bottom:30px;
+}
+.btn-goods {
+    background-color: black;
+    color:  white;
+    padding: 15px 30px;
+    transition: 1000ms;
+}
+.btn-goods:hover {
+    background-color: #1c1d24;
+    color:  white;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: 1000ms;
 }
 
 /* ---------------------------------------- footer rész ---------------------------------------- */
