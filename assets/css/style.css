@@ -1,73 +1,105 @@
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 body {
-    color: #6c6c6f;;
+    color: #6c6c6f;
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
+
 a {
     -webkit-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
 
-#primary-menu li {
-    padding-top: 30px;
+/* ---------------------------------------- header rész ---------------------------------------- */
+
+.header .abs-header {
+    width: 100%;
 }
-#primary-menu li a {
+
+a.logo img {
+    width: 120px;
+    height: 100px;
+}
+
+.primary-menu {
+    width: 100%;
+    padding: 30px 8% 10px 8%;
+}
+
+.primary-menu ul {}
+
+.primary-menu li {}
+
+.primary-menu li a {
     color: white;
-    margin: 0 40px;
+    margin: 0 30px;
     font-size: 16pt;
     font-weight: bold;
     text-decoration: none;
 }
+
 #primary-menu li a:hover {
     color: #aaa;
 }
-#foo-nav li a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+
+@media only screen and (max-width: 600px) {
+    .spa-img {
+        width: 300px;
+    }
 }
-#foo-nav li a:hover {
-    color: #aaa;
-}
+
 .logo img {
     padding-bottom: 15px;
 }
+
 ul li {
     display: block;
 }
+
 .center {
     text-align: center;
 }
+
 .primary-menu {
     color: #fff;
 }
-.header, .footer{
+
+.header,
+.footer {
     background-color: #1c39e0;
     text-align: center;
+
 }
 
 h2 {
     color: #1c39e0;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 13px;
 }
+
 img {
     display: block;
     width: 100%;
     height: auto;
 }
+
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 section {
     display: block;
     position: relative;
@@ -87,34 +119,41 @@ section {
     min-width: 170px;
     padding: 20px 15px;
 }
+
 .post {
     border: 1px solid;
-    border-color: rgba(116, 112, 112,0.3);
+    border-color: rgba(116, 112, 112, 0.3);
     text-align: center;
     padding: 20px;
     padding-bottom: 50px;
 }
+
 .post h4 {
     padding: 20px 5px;
     color: #1c39e0;
     font-weight: bold;
 }
+
 .btn-round {
     border-radius: 50px;
 }
+
 .btn:hover {
     background-color: rgba(28, 57, 224, 0.9);
     color: #fff;
 }
+
 .sec-heading {
     margin-bottom: 90px;
     position: relative;
     text-align: center;
 }
+
 .sec-heading img {
     max-width: 84px;
     margin: 0 auto 40;
 }
+
 .sec-heading .tagline {
     color: #888;
     display: block;
@@ -124,9 +163,11 @@ section {
     text-transform: uppercase;
     margin-bottom: 27px;
 }
+
 .header {
     position: relative;
 }
+
 .header.abs-header {
     position: absolute;
     top: 0;
@@ -134,17 +175,161 @@ section {
     width: 100%;
     z-index: 1;
 }
-.foo-nav {
-    margin:300px;
+/* ---------------------------------------- Main rész ---------------------------------------- */
+
+
+/* section banner ---------------------------------------- */
+.banner {
+    margin-top: 100px;
 }
+.spa-img {
+    display: block;
+    float: right;
+    width: 280px;
+}
+.banner-content {
+    padding-top: 16px;
+}
+.tagline {
+    font-weight: bold;
+    text-transform: uppercase;;
+}
+div.banner-content h2 {
+    padding-bottom: 20px;
+}
+.video-btn {
+    display: block;
+    margin-top: 50px;
+    color: rgb(116, 112, 112);
+    font-weight: bold;
+}
+.ti-control-play {
+    border: 12px solid #1c39e0;
+    border-radius: 50%;
+    background-color: #1c39e0;
+    color: white;
+    margin-right: 12px;
+}
+
+/* section about ---------------------------------------- */
+
+section.about .container {
+    padding:10px;
+}
+
+.goods-1 {
+    width: 130px;
+    margin-left: 9%;
+    display: block;
+    float:left;
+    
+}
+.goods-2 {
+    width: 70px;
+    margin: 0 20px 20px 46%;
+    display: block;
+    bottom: 30px;
+    padding-top: 50px;
+}
+.goods-3 {
+    width: 65px;
+    display: block;
+    position: absolute;
+    right: 2%;
+    bottom: 30%;
+    z-index: -1;
+}
+.about-content {
+    display: block;
+    text-align: center;
+}
+.about-content h3 {
+    font-weight: 900;
+    color: black;
+    margin: 15px 0 25px 0;
+    font-size: 36pt;
+}
+.btn-spa {
+    border-radius: 25px;
+    margin: 60px 43% 0 42%;
+}
+
+/* section Insta-service ---------------------------------------- */
+.single-service {
+    width: 100px;
+    height: 100px;
+}
+.service-hover {
+    display: none;
+}
+.service-hover:hover {
+    display: block;
+}
+
+/* section goods ---------------------------------------- */
+
+section.goods h3 {
+    color:black;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+section.goods .container{
+    margin-bottom: 70px;
+}
+
+/* ---------------------------------------- footer rész ---------------------------------------- */
+
+.foo-nav {
+    margin: 30px;
+}
+
 .primary-menu,
-.footer .foo-nav {
+.footer .foo-nav,
+.footer {
     position: relative;
 }
+.foo-nav li a {
+    color: white;
+    margin: 0 20px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#foo-nav li a:hover {
+    color: #aaa;
+}
+.foo-o {
+    padding-left:45%;
+    padding:40px 0 70px 45% ;
+}
+.foo-o img {
+    display: block;
+    width: 20px;
+    float:left;
+}
+.foo-o p {
+    font-size: 16pt;
+    display: block;
+    float:left;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.copyright {
+    color: #fff;
+    clear: both;
+    display:block;
+}
+
 .primary-menu .mobile-menu,
 .footer .foo-nav .mobile-menu {
     display: none;
 }
+div.container span {
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 767px) {
 
     .primary-menu .mobile-menu,
@@ -157,6 +342,7 @@ section {
         top: -60px;
     }
 }
+
 @media screen and (min-width: 768px) {
 
     .primary-menu li,
