@@ -33,7 +33,7 @@ a.logo img {
 
 .primary-menu {
     width: 100%;
-    padding: 30px 8% 10px 8%;
+    padding: 20px 8% 10px 8%;
 }
 
 /*.primary-menu ul {}
@@ -232,21 +232,21 @@ section.about .container {
     padding:10px;
 }
 
-.goods-1 {
+.item-1 {
     width: 130px;
     margin-left: 9%;
     display: block;
     float:left;
     
 }
-.goods-2 {
+.item-2 {
     width: 70px;
     margin: 0 20px 20px 46%;
     display: block;
     bottom: 30px;
     padding-top: 50px;
 }
-.goods-3 {
+.item-3 {
     width: 65px;
     display: block;
     position: absolute;
