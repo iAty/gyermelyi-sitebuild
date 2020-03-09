@@ -375,9 +375,20 @@ div.container span {
 }
 
 @media screen and (min-width: 768px) {
-
     .primary-menu li,
     .footer .foo-nav li {
         display: inline-block;
     }
+}
+
+.single-service {
+
+}
+
+.service-hover {
+    
+}
+
+.service-hover:hover {
+    
 }
