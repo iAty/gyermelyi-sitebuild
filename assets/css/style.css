@@ -270,15 +270,21 @@ section.about .container {
 }
 
 /* section Insta-service ---------------------------------------- */
-.single-service {
-    width: 100px;
-    height: 100px;
-}
-.service-hover {
-    display: none;
-}
-.service-hover:hover {
+.img-fluid {
+    max-width: 100%;
+    height: 100%;
     display: block;
+    
+}
+.insta-hover {
+    visibility:visible;
+    position: relative;
+    z-index: 2;
+    width: auto;
+    
+}
+.insta-hover img{
+    width: 20px;
 }
 
 /* section goods ---------------------------------------- */
@@ -301,7 +307,7 @@ section.goods p {
     transition: 1000ms;
 }
 .btn-goods:hover {
-    background-color: #1c1d24;
+    background-color: #2e2e30;
     color:  white;
     padding: 15px 30px;
     text-decoration: none;
@@ -381,14 +387,3 @@ div.container span {
     }
 }
 
-.single-service {
-
-}
-
-.service-hover {
-    
-}
-
-.service-hover:hover {
-    
-}
